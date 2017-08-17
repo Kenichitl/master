@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<body style="background:url(img/back6.png)fixed repeat top center;">
+<?php    
+    $pagina = isset($_GET['op'])? strtolower($_GET['op']) : 'principal';	
+    require_once 'paginas/encabezado.php';	
+    require_once 'paginas/' . $pagina . '.php';
+    require_once 'paginas/social.php';	
+    require_once 'paginas/piePagina.php';
+?>
+
+</body>
+</html>
